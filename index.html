@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Add a gray background color with some padding */
+body {
+  font-family: Arial;
+  padding: 20px;
+  background: #f1f1f1;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  font-size: 40px;
+  text-align: center;
+  background: white;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+   background-color: white;
+   padding: 20px;
+   margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h2>Rakesh The Hacker</h2>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>How i Hacked my college WEbsite</h2>
+      <h5>Blog, Jan 22, 2022</h5>
+      <div class="fakeimg" style="height:200px;">Image</div>
+      <p>I hacked my college website</p>
+      <p>This is how i Hacked my college Website</p>
+    </div>
+    <div class="card">
+      <h2>How i tricked my Paytm gateway system to pay my college fee</h2>
+      <h5>Blog, Jan 22, 2022</h5>
+      <div class="fakeimg" style="height:200px;">Image</div>
+      <p>Paytm not encrypting amount</p>
+      <p>Paytm doesn't encrypt the response code after a sucessfull transaction so i tricked my college website that i am paying more than i payed</p>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>Rakeshthehacker</h2>
+      <div class="fakeimg" style="height:100px;">Image</div>
+      <p>Ethecial Hacker|Youtuber|Bug Bounty|Student</p>
+    </div>
+    <div class="card">
+      <h3>Popular Post</h3>
+      <div class="fakeimg">Image</div><br>
+      <div class="fakeimg">Image</div><br>
+      <div class="fakeimg">Image</div>
+    </div>
+    <div class="card">
+      <h3>Follow Me</h3>
+      Twitter:<a href="https://twitter.com/rakeshthehacker">Rakeshthehacker</a>
+      Youtube:<a href="https://www.youtube.com/channel/UCIsVIeW3K87XuTJKNugtgyw">Rakesh The Hacker</a>
+      Linkedin:<a href="https://www.linkedin.com/in/rakesh-the-hacker-936029230">Rakesh The Hacker</a>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <h2>Not decided yet</h2>
+</div>
+
+</body>
+</html>
